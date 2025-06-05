@@ -12,9 +12,45 @@
     5. Media Queries
 ////////////////////////*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+
+:root {
+    /* background colors */
+    --color-bg-1: #5722CD;
+    --color-bg-2: #4845E4;
+    --color-bg-3: #F3F6F9;
+
+    /* accent colors */
+    --color-button: #ED4385;
+
+    /* text colors */
+    --color-text: #0C0C0C;
+    --color-text-light:#7A7A7A;
+    --color-text-accent: #F2F0FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", Arial, sans-serif;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
