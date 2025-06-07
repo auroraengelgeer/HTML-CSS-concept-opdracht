@@ -30,8 +30,8 @@
 
     /* text colors */
     --color-text: #0C0C0C;
-    --color-text-light:#7A7A7A;
-    --color-text-accent: #F2F0FF;
+    --color-text-grey:#7A7A7A;
+    --color-text-white: #F2F0FF;
 }
 
 * {
@@ -62,6 +62,45 @@ body {
 
 /* --------------- 4.1 Header ------------------------- */
 
+.header-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: var(--color-bg-2);*/
+    background: #5722CD;
+    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);}
+
+.navbar {
+    display: flex;
+    /*border: black dashed 1px;*/
+    width: 100%;
+    justify-content: flex-end;
+    color: var(--color-text-white);
+    padding: 1rem 1rem;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    /*border: hotpink dashed 1px;*/
+    width: 500px;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    border: black dashed 1px;
+    padding: 250px 250px;
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
