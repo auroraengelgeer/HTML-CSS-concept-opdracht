@@ -63,6 +63,7 @@ body {
 /* --------------- 4.1 Header ------------------------- */
 
 .header-container {
+    position: relative;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -86,6 +87,7 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-weight: 300;
     justify-content: space-between;
     /*border: hotpink dashed 1px;*/
     width: 500px;
@@ -138,6 +140,16 @@ h1 {
 a:visited {
     color: var(--color-text-white);
 }
+
+.header-img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
