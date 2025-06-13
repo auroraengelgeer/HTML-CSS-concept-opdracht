@@ -32,6 +32,7 @@
     --color-text: #0C0C0C;
     --color-text-grey:#7A7A7A;
     --color-text-white: #F2F0FF;
+    --color-text-purple: #5722CD;
 }
 
 * {
@@ -39,6 +40,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
@@ -130,7 +136,6 @@ h1 {
     padding: 1rem 2rem;
     border-radius: 25px;
     color: var(--color-text-white);
-    text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     font: 400 0.7rem "Roboto", Arial, sans-serif;
     text-transform: uppercase;
@@ -151,5 +156,37 @@ a:visited {
 
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    /*border: black dashed 5px;*/
+    background-color: var(--color-bg-3);
+}
+
+.introduction-text {
+    text-align: center;
+    width: 700px;
+    color: var(--color-text-purple);
+    padding: 1rem;
+    /*border: black dashed 2px;*/
+}
+
+.introduction-link {
+    margin-top: 5rem;
+    font-weight: 500;
+}
+
+.introduction-link a {
+    color: var(--color-text-purple);
+}
+
+a:visited {
+    color: var(--color-text-purple);
+}
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
