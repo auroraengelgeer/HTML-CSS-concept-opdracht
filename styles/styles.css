@@ -124,7 +124,6 @@ h1 {
 }
 
 .hero a {
-    border: hotpink dashed 1px;
     background-color: var(--color-button);
     padding: 1rem 2rem;
     border-radius: 25px;
