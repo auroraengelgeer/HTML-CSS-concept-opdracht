@@ -74,14 +74,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: var(--color-bg-2);*/
     background: #5722CD;
     background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);
 }
 
 .navbar {
     display: flex;
-    /*border: black dashed 1px;*/
     width: 100%;
     justify-content: flex-end;
     color: var(--color-text-white);
@@ -96,7 +94,6 @@ body {
     list-style: none;
     font-weight: 300;
     justify-content: space-between;
-    /*border: hotpink dashed 1px;*/
     width: 500px;
 }
 
@@ -107,7 +104,6 @@ body {
 .hero {
     align-items: center;
     justify-content: center;
-    /*border: black dashed 1px;*/
     padding: 30px 50px 150px 50px;
     margin: 50px auto;
     text-align: center;
@@ -123,7 +119,6 @@ h1 {
     flex-wrap: wrap;
     padding: 1.5rem;
     width: 100%;
-    /*border: hotpink dashed 1px;*/
 }
 
 .hero p {
@@ -165,7 +160,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    /*border: black dashed 5px;*/
     background-color: white;
     width: 100%;
 }
@@ -175,7 +169,6 @@ a:visited {
     max-width: 700px;
     color: var(--color-text-purple);
     padding: 1rem;
-    /*border: black dashed 2px;*/
 }
 
 .introduction-link {
@@ -196,7 +189,6 @@ a:visited {
 .project-container {
     display: flex;
     background-color: var(--color-bg-3);
-    /*border: hotpink dashed 1px;*/
     flex-direction: column;
 }
 
@@ -204,7 +196,6 @@ a:visited {
     width: 100%;
     display: flex;
     flex-direction: row;
-    /*border: black dashed 1px;*/
     justify-content: space-between;
     padding-right: 3rem;
     padding-left: 3rem;
@@ -262,7 +253,6 @@ a:visited {
     gap: 2rem;
     justify-content: center;
     padding: 5rem 1rem;
-    /*border: hotpink dashed 1px;*/
 }
 
 .services-icon {
