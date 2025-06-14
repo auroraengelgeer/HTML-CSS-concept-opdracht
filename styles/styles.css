@@ -9,9 +9,9 @@
         4.1 Header
         4.2 Introduction
         4.3 Projects
+        4.3 Services
     5. Media Queries
 ////////////////////////*/
-
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -30,7 +30,7 @@
 
     /* text colors */
     --color-text: #0C0C0C;
-    --color-text-grey:#7A7A7A;
+    --color-text-grey: #7A7A7A;
     --color-text-white: #F2F0FF;
     --color-text-purple: #5722CD;
 }
@@ -76,7 +76,8 @@ body {
     justify-content: center;
     /*background-color: var(--color-bg-2);*/
     background: #5722CD;
-    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);}
+    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);
+}
 
 .navbar {
     display: flex;
@@ -111,6 +112,7 @@ body {
     margin: 50px auto;
     text-align: center;
     color: var(--color-text-white);
+    width: 100%;
 }
 
 h1 {
@@ -119,8 +121,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 800px;
     padding: 1.5rem;
+    width: 100%;
     /*border: hotpink dashed 1px;*/
 }
 
@@ -146,7 +148,7 @@ a:visited {
     color: var(--color-text-white);
 }
 
-.header-img{
+.header-img {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -165,11 +167,12 @@ a:visited {
     padding: 5rem;
     /*border: black dashed 5px;*/
     background-color: white;
+    width: 100%;
 }
 
 .introduction-text {
     text-align: center;
-    width: 700px;
+    max-width: 700px;
     color: var(--color-text-purple);
     padding: 1rem;
     /*border: black dashed 2px;*/
@@ -196,15 +199,16 @@ a:visited {
     /*border: hotpink dashed 1px;*/
     flex-direction: column;
 }
- .project-wrapper {
-     width: 100%;
-     display: flex;
-     flex-direction: row;
-     /*border: black dashed 1px;*/
-     justify-content: space-between;
-     padding-right: 3rem;
-     padding-left: 3rem;
- }
+
+.project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*border: black dashed 1px;*/
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
 
 
 .project-description {
@@ -213,21 +217,21 @@ a:visited {
     justify-content: space-between;
     align-items: flex-start;
     align-self: center;
-    margin-left: 5rem;
-    margin-right: 3rem;
     width: 20rem;
-    /*border: 1px dashed orangered;*/
-    padding: 4rem;
+    flex-basis: 400px;
     gap: 2rem;
+    margin: 1.5rem 3rem 1.5rem 5rem;
 }
- .project-img {
-     width: 100%;
-     height: 100%;
-     box-shadow: 0 18px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 18px 20px 1px rgba(0, 0, 0, 0.2);
+}
 
 .image-wrapper {
     padding: 6rem 1rem;
-    flex-basis: 800px;
+    flex-basis: 750px;
     flex-grow: 0;
     flex-shrink: 1;
 }
@@ -247,4 +251,43 @@ a:visited {
 .project-wrapper:nth-child(even) {
     flex-direction: row-reverse;
 }
+
+/* --------------- 4.4 Services ------------------------- */
+
+
+.services-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 5rem 1rem;
+    /*border: hotpink dashed 1px;*/
+}
+
+.services-icon {
+    width: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.services-tile {
+    border: solid 1px var(--color-bg-1);
+    flex: 1 1 calc(33.333% - 2rem);
+    min-width: 250px;
+    max-width: 350px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.services-tile h3 {
+    color: var(--color-text-purple);
+    margin-bottom: 1rem;
+}
+
+.services-tile p {
+    color: var(--color-text-grey);
+    font-size: 0.8rem;
+}
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
