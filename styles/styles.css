@@ -47,7 +47,9 @@ a {
     text-decoration: none;
 }
 
-
+button:hover {
+    cursor: pointer;
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 
@@ -136,7 +138,7 @@ h1 {
     border: none;
     border-radius: 25px;
     color: var(--color-text-white);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     font: 400 0.7rem "Roboto", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -308,7 +310,7 @@ a:visited {
 
 .form-container p {
     font: 300 1rem "Roboto", Arial, sans-serif;
-    padding: 1rem 1rem;
+    padding-top: 1rem;
 }
 
 
@@ -318,8 +320,9 @@ a:visited {
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
-    border: yellow dashed 1px;
-    padding: 2rem;
+    /*border: yellow dashed 1px;*/
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     flex-wrap: wrap;
     margin: 0 5rem;
 }
@@ -332,22 +335,23 @@ form {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    border: hotpink dashed 1px;
+    /*border: hotpink dashed 1px;*/
 }
 
 
 .form-button {
         background-color: var(--color-button);
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
         border: none;
         border-radius: 25px;
         color: var(--color-text-white);
-        box-shadow: 0 4px 25px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         font: 400 0.7rem "Roboto", Arial, sans-serif;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-        margin: 1rem auto 0 auto;
+        margin: 1.5rem auto 2rem auto;
 }
+
 
 
 .label {
@@ -391,5 +395,10 @@ footer p {
     font-weight: 300;
     font-size: 0.6rem;
     padding: 1rem 1rem;
+}
+
+::placeholder {
+    font: 400 0.8rem "Roboto", Arial, sans-serif;
+    color: var(--color-text-grey);
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
