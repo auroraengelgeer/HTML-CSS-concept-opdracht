@@ -8,13 +8,59 @@
     4. Areas
         4.1 Header
         4.2 Introduction
-        etc.
+        4.3 Projects
+        4.3 Services
+        4.4 Form
+        4.5 Footer
     5. Media Queries
 ////////////////////////*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+
+:root {
+    /* background colors */
+    --color-bg-1: #5722CD;
+    --color-bg-2: #4845E4;
+    --color-bg-3: #F3F6F9;
+
+    /* accent colors */
+    --color-button: #ED4385;
+
+    /* text colors */
+    --color-text: #0C0C0C;
+    --color-text-grey: #7A7A7A;
+    --color-text-white: #F2F0FF;
+    --color-text-purple: #5722CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", Arial, sans-serif;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -26,6 +72,333 @@
 
 /* --------------- 4.1 Header ------------------------- */
 
+.header-container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5722CD;
+    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: var(--color-text-white);
+    padding: 1rem 1rem;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 300;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px 150px 50px;
+    margin: 50px auto;
+    text-align: center;
+    color: var(--color-text-white);
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 10px 0;
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    background-color: var(--color-button);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-text-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    font: 400 0.7rem "Roboto", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+a:visited {
+    color: var(--color-text-white);
+}
+
+.header-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
 
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-color: white;
+    width: 100%;
+}
+
+.introduction-text {
+    text-align: center;
+    max-width: 700px;
+    color: var(--color-text-purple);
+    padding: 1rem;
+}
+
+.introduction-link {
+    margin-top: 5rem;
+    font-weight: 500;
+}
+
+.introduction-link a {
+    color: var(--color-text-purple);
+}
+
+a:visited {
+    color: var(--color-text-purple);
+}
+
+/* --------------- 4.3 Projects ------------------------- */
+
+.project-container {
+    display: flex;
+    background-color: var(--color-bg-3);
+    flex-direction: column;
+}
+
+.project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+    width: 20rem;
+    flex-basis: 400px;
+    gap: 2rem;
+    margin: 1.5rem 3rem 1.5rem 5rem;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 18px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper {
+    padding: 6rem 1rem;
+    flex-basis: 750px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.project-container h3 {
+    font-size: 1.8rem;
+}
+
+.project-description a {
+    text-transform: uppercase;
+    font: 600 0.7rem "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: var(--color-text-purple);
+}
+
+.project-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* --------------- 4.4 Services ------------------------- */
+
+
+.services-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 5rem 1rem;
+}
+
+.services-icon {
+    width: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.services-tile {
+    border: solid 1px var(--color-bg-1);
+    flex: 1 1 calc(33.333% - 2rem);
+    min-width: 250px;
+    max-width: 350px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.services-tile h3 {
+    color: var(--color-text-purple);
+    margin-bottom: 1rem;
+}
+
+.services-tile p {
+    color: var(--color-text-grey);
+    font-size: 0.8rem;
+}
+
+
+/* --------------- 4.4 Form ------------------------- */
+
+.form-container {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #5722CD;
+    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);
+    color: var(--color-text-white);
+}
+
+
+.form-container h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+.form-container p {
+    font: 300 1rem "Roboto", Arial, sans-serif;
+    padding-top: 1rem;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    /*border: yellow dashed 1px;*/
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+
+
+form {
+    display: flex;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    /*border: hotpink dashed 1px;*/
+}
+
+
+.form-button {
+        background-color: var(--color-button);
+        padding: 1rem 4rem;
+        border: none;
+        border-radius: 25px;
+        color: var(--color-text-white);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        font: 400 0.7rem "Roboto", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin: 1.5rem auto 2rem auto;
+}
+
+
+
+.label {
+    padding-top: 2rem;
+}
+
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+textarea {
+
+    min-height: 150px;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Roboto", sans-serif;
+}
+/* --------------- 4.5 Footer ------------------------- */
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 3rem;
+    background-color: black;
+}
+
+footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-white);
+    font-weight: 300;
+    font-size: 0.6rem;
+    padding: 1rem 1rem;
+}
+
+::placeholder {
+    font: 400 0.8rem "Roboto", Arial, sans-serif;
+    color: var(--color-text-grey);
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
