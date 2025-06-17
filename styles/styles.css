@@ -10,6 +10,8 @@
         4.2 Introduction
         4.3 Projects
         4.3 Services
+        4.4 Form
+        4.5 Footer
     5. Media Queries
 ////////////////////////*/
 
@@ -131,6 +133,7 @@ h1 {
 .hero a {
     background-color: var(--color-button);
     padding: 1rem 2rem;
+    border: none;
     border-radius: 25px;
     color: var(--color-text-white);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -280,4 +283,114 @@ a:visited {
     font-size: 0.8rem;
 }
 
+
+/* --------------- 4.4 Form ------------------------- */
+
+.form-container {
+    flex-direction: column;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #5722CD;
+    background: linear-gradient(301deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 50%);
+    color: var(--color-text-white);
+}
+
+
+.form-container h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+.form-container p {
+    font: 300 1rem "Roboto", Arial, sans-serif;
+    padding: 1rem 1rem;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+    min-width: 600px;
+    border: yellow dashed 1px;
+    padding: 2rem;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+
+
+form {
+    display: flex;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border: hotpink dashed 1px;
+}
+
+
+.form-button {
+        background-color: var(--color-button);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 25px;
+        color: var(--color-text-white);
+        box-shadow: 0 4px 25px 10px rgba(0, 0, 0, 0.1);
+        font: 400 0.7rem "Roboto", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin: 1rem 14rem;
+}
+
+
+
+.label {
+    padding-top: 2rem;
+}
+
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+textarea {
+
+    min-height: 150px;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Roboto", sans-serif;
+}
+/* --------------- 4.5 Footer ------------------------- */
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 3rem;
+    background-color: black;
+}
+
+footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-white);
+    font-weight: 300;
+    font-size: 0.6rem;
+    padding: 1rem 1rem;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
